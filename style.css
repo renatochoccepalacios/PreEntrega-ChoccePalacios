@@ -133,9 +133,7 @@
     border-color: #fff;
 }
 
-.back-nav-resposive {
-    background-color: #e9d3c0;
-}
+
 
 
 
@@ -164,9 +162,11 @@
     }
 
     .nav-item .color-nav-a {
-        color: #fff !important;
+        color: #000 !important;
     }
-
+    .back-nav-resposive {
+        background-color: #e9d3c0;
+    }
     .color-nav-link:hover {
         color: #a0a0a0 !important; /* Cambia al color deseado */
     }
