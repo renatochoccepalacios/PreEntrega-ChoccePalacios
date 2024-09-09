@@ -10,6 +10,9 @@
 
 }
 
+.nav-sin-back {
+    background-color: transparent;
+}
 .main-inicio {
     height: 100vh;
     position: relative;
@@ -93,4 +96,78 @@
 
 .footer-texto p {
     margin-bottom: 0;
+}
+
+.active {
+    color: #a0a0a0 !important; 
+}
+/* .nav-item a.active {
+    color: #a0a0a0;
+} */
+
+/* Cambiar el color del texto al pasar el cursor */
+.color-nav-link:hover {
+    color: #a0a0a0 !important; /* Cambia al color deseado */
+}
+
+
+
+.logo-nav {
+    position: absolute;
+    margin: 0;
+    height: 90%;
+    padding: 0;
+}
+
+.logo-nav-responsive {
+    height: 90%;
+}
+
+.logo-nav img, .logo-nav-responsive img {
+    width: 100%;
+    height: 100%;
+}
+
+.hamburguer-color {
+    color: #fff;
+    border-color: #fff;
+}
+
+.back-nav-resposive {
+    background-color: #e9d3c0;
+}
+
+
+
+
+.logo-nav {
+    display: none;
+}
+.contenedor-nav {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+
+
+@media screen and (min-width: 992px){
+    .logo-nav {
+        display: flex;
+    }
+
+    .active {
+        color: #a0a0a0 !important; /* Cambiar a tu color de texto preferido */
+    }
+    .nav-item a.active {
+        color: #f3f3f3;
+    }
+
+    .nav-item .color-nav-a {
+        color: #fff !important;
+    }
+
+    .color-nav-link:hover {
+        color: #a0a0a0 !important; /* Cambia al color deseado */
+    }
 }
