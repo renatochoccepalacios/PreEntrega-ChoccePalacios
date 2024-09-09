@@ -7,9 +7,14 @@
 }
 
 .header {
-
+    position: sticky;
+    height: 70px;
 }
 
+.header .nav {
+    height: 70px;
+
+}
 .nav-sin-back {
     background-color: transparent;
 }
@@ -96,6 +101,11 @@
 
 .footer-texto p {
     margin-bottom: 0;
+}
+
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .active {
