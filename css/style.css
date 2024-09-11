@@ -284,6 +284,9 @@
 
     .servicios-contenedor-abajo {
         display: flex;
+        /* otra opcion xd */
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr); */
         gap: 3rem;
     }
     
@@ -304,6 +307,12 @@
 /* estilos nosotros */
 .nosotros-imagenes {
     height: 50%;
+}
+
+.nosotros-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .nosotros-imagenes img, .objetivo-contenedor-item img {
@@ -340,4 +349,41 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.objetivo-texto-derecha p {
+    text-align: center;
+}
+
+.objetivo-contenedor .objetivo-contenedor-item {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+}
+
+.objetivo-texto-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .nosotros-imagenes {
+        flex-direction: row;
+        height: 200px;
+        justify-content: space-between;
+    }
+    .nosotros-imagenes img {
+        width: 30%;
+    }
+
+    .objetivo-contenedor .objetivo-contenedor-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .objetivo-contenedor-item img {
+        height: 400px;
+        width: 40%;
+    }
 }
