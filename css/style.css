@@ -471,3 +471,84 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+
+/* estilos contacto */
+.contacto-formulario {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.3rem;
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 50px;
+}
+
+.contacto-main .contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-main .contacto-formulario form input, .contacto-main .contacto-formulario form textarea{
+    padding: 0.3rem 0.4rem;
+    border: 1px solid;
+}
+
+.contacto-main .contacto-formulario form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contacto-main .contacto-formulario form button {
+    padding: 7px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.contacto-main .contacto-formulario h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacto-ubicacion {
+    display: flex;
+    padding: 0 2rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-ubicacion h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.contacto-ubicacion iframe {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 600px) {
+    .contacto-formulario {
+        margin: 3rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contacto-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-ubicacion {
+        margin: 3rem 2rem;
+        padding: 0;
+    }
+
+    .contacto-ubicacion iframe {
+        height: 90%;
+    }
+}
