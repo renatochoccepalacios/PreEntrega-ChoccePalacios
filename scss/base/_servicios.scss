@@ -56,8 +56,14 @@
                 }
 
                 .servicios-estilos-texto {
+                    @include flex-direccion;
+                    gap: 1rem;
                     h2 {
                         @include servicios-style-text;
+                    }
+
+                    p {
+                        text-align: center;
                     }
                 }
             }
