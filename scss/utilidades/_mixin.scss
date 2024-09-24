@@ -1,6 +1,6 @@
-@mixin flex-direccion ($display, $direccion){
-    display: $display;
-    flex-direction: $direccion;
+@mixin flex-direccion {
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin text-estilos {
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-@mixin ancho-alto ($width, $height){
+@mixin ancho-alto ($width, $height) {
     width: $width;
     height: $height;
 }
@@ -18,4 +18,19 @@
     font-weight: $font-weight;
     letter-spacing: $letter-spacing;
     text-transform: uppercase;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@mixin servicios-style-text {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: balance;
+    padding: 15px 0;
+    border-bottom: solid;
 }

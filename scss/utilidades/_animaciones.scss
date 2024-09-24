@@ -1,0 +1,17 @@
+@keyframes banner {
+    0%, 25% {
+        background-image: url("../../img/prueba1.jpg");
+    }
+    45%, 50% {
+        background-image: url("../../img/prueba2.jpg");
+
+    }
+    60%, 75% {
+        background-image: url("../../img/prueba3.jpg");
+
+    }
+    80%, 100% {
+        background-image: url("../../img/prueba4.jpg");
+    }
+
+}

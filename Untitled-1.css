@@ -83,7 +83,6 @@
     background-color: #a18167;
     padding: 1rem 2rem;
     gap: 1rem;
-
     margin-top: 117px;
 }
 
@@ -176,7 +175,7 @@
 }
 
 
-.servios-fila {
+.servicios-fila {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -187,7 +186,6 @@
     row-gap: 3rem;
     padding: 2rem 1rem;
     align-items: center;
-
 }
 
 .servicios-contenedor .servicios-item {
@@ -218,9 +216,9 @@
 
 .servicios-estilos-texto h2 {
     margin: 0;
+    text-transform: uppercase;
     text-align: center;
     text-wrap: balance;
-    text-transform: uppercase;
     padding: 15px 0;
     border-bottom: solid;
 }
@@ -237,10 +235,10 @@
 
 .servicios-main h1 {
     padding: 40px;
+    text-transform: uppercase;
     text-align: center;
     background-color: #e8e8e8;
     letter-spacing: 5px;
-    text-transform: uppercase;
 }
 
 /* tablet */
@@ -288,7 +286,7 @@
         height: 35%;
     }
 
-    .servios-fila {
+    .servicios-fila {
         grid-template-rows: repeat(1, 1fr);
     }
 }
@@ -317,9 +315,9 @@
 
 .nosotros-item h2, .objetivo-texto-derecha h2 {
     margin: 0;
+    text-transform: uppercase;
     text-align: center;
     text-wrap: balance;
-    text-transform: uppercase;
     padding: 15px 0;
     border-bottom: solid;
 }
@@ -497,8 +495,8 @@
 }
 
 .contacto-main .contacto-formulario h2 {
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .contacto-ubicacion {

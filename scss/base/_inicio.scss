@@ -1,0 +1,57 @@
+@import "../utilidades/mixin";
+@import "../utilidades/animaciones";
+
+.main-inicio {
+    height: 100vh;
+    position: relative;
+
+    .back-negro {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+        background: #000000a3;
+    }
+
+    .img-main {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        animation: banner 9s infinite linear alternate;
+        position: absolute;
+    }
+
+    .main-inicio-text {
+        position: relative;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+        .inicio-texto {
+            text-align: center;
+
+            h1 {
+                @include inicio-texto(3.4rem, 100, 0.25rem);
+                z-index: 5;
+            }
+
+            p {
+                @include inicio-texto(1.1rem, 200, 2px);
+                text-align: center;
+            }
+        }
+
+        .inicio-texto-banner {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            h3 {
+                @include inicio-texto(0.8rem, 200, 2px);
+                margin: 0 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+.footer-principal {
+    @include flex-direccion;
+    text-align: center;
+    background-color: $color-principal;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    margin-top: 117px;
+
+    .footer-lista {
+        margin-bottom: 0;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        padding: 0;
+        flex-wrap: wrap;
+        color: #e9d3c0;
+        a {
+            color: $color-secundario;
+        }
+    }
+
+    .footer-texto {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
