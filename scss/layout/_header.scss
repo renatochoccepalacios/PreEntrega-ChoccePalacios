@@ -1,0 +1,67 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+header {
+    position: sticky;
+    height: 70px;
+
+    nav {
+        height: 70px;
+        background-color: $color-principal;
+
+        .logo-nav {
+            position: absolute;
+            margin: 0;
+            height: 90%;
+            padding: 0 1.5rem;
+
+            img {
+                @include ancho-alto(100%, 100%);
+            }
+        }
+
+
+
+        .contenedor-nav {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+
+            .hamburguer-color {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            div {
+                div {
+                    .logo-nav-responsive {
+                        height: 90%;
+
+                        img {
+                            @include ancho-alto(100%, 100%);
+                        }
+                    }
+                }
+                div {
+                    ul {
+                        li {
+                            .active {
+                                color: $color-secundario !important; 
+                            }
+                            a {
+                                text-transform: uppercase;
+                                font-weight: 300;
+                                &:hover {
+                                    transition: 0.5s ease;
+                                    color: $color-secundario;
+                                }
+                            }
+                            
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

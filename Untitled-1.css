@@ -48,17 +48,25 @@
 .inicio-texto h1{
     font-size: 3.4rem;
     font-weight: 100;
-    z-index: 1;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .inicio-texto p {
-    text-align: center;
     font-size: 1.1rem;
-    text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.inicio-texto-banner h3 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 20px;
 }
 
 .inicio-texto-banner {
@@ -67,13 +75,6 @@
     text-align: center;
 }
 
-.inicio-texto-banner h3 {
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    margin: 0 20px;
-}
 
 .footer-principal {
     display: flex;

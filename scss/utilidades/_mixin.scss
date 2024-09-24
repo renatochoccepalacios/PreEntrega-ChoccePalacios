@@ -1,0 +1,21 @@
+@mixin flex-direccion ($display, $direccion){
+    display: $display;
+    flex-direction: $direccion;
+}
+
+@mixin text-estilos {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin ancho-alto ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin inicio-texto ($font-size, $font-weight, $letter-spacing) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+}
