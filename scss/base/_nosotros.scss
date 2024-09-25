@@ -1,0 +1,34 @@
+@import "../utilidades/mixin";
+
+.nosotros-main {
+    @include flex-direccion;
+    gap: 2rem;
+
+    .nosotros-section {
+        .nosotros-item {
+            @include flex-direccion;
+            gap: 1rem;
+
+            h2 {
+                @include nosotros-h2;
+            }
+
+            p {}
+        }
+    }
+
+    .objetivo-contenedor {
+        .objetivo-contenedor-item {
+            img {}
+
+            .objetivo-texto-derecha {
+                h2 {
+                    @include nosotros-h2;
+
+                }
+
+                p {}
+            }
+        }
+    }
+}

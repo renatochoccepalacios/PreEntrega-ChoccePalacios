@@ -34,3 +34,12 @@
     padding: 15px 0;
     border-bottom: solid;
 }
+
+@mixin nosotros-h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: balance;
+    padding: 15px 0;
+    border-bottom: solid;
+}
