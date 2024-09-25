@@ -1,0 +1,43 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+.proyectos-main {
+    @include flex-direccion;
+    gap: 5rem;
+    padding: 3rem 1rem;
+
+    h1 {
+        @include text-estilos;
+    }
+
+    .proyectos-buttons {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+
+        .active-proyecto-buttons {
+            @include buttons-style($color-white);
+            background-color: $color-black;
+        }
+
+        .button-no-seleccionado {
+            @include buttons-style($color-black);
+            transition: 0.5s ease;
+
+            &:hover {
+                background-color: $color-black;
+                color: $color-white;
+            }
+
+        }
+    }
+
+    .galeria-proyectos {
+        display: grid;
+        gap: 1rem;
+
+        img {
+            @include ancho-alto-cover;
+        }
+    }
+}

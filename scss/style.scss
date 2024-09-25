@@ -1,7 +1,10 @@
 @import "base/reset";
 @import "layout/header";
+@import "layout/footer";
 @import "base/inicio";
 @import "base/servicios";
 @import "base/nosotros";
-@import "layout/footer";
-
+@import "base/proyectos";
+@import "base/contacto";
+@import "base/mediaquerys/mq-tablet";
+@import "base/mediaquerys/mq-desktop";

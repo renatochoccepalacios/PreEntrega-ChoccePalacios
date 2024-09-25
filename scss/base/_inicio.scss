@@ -5,6 +5,7 @@
     height: 100vh;
     position: relative;
     z-index: -1;
+    overflow: hidden;
     .back-negro {
         height: 100%;
         position: absolute;
@@ -14,10 +15,8 @@
     }
 
     .img-main {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        animation: banner 9s infinite linear alternate;
+        @include ancho-alto-cover;
+        animation: banner 10s infinite linear alternate;
         position: absolute;
     }
 

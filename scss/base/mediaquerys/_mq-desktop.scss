@@ -1,0 +1,82 @@
+@import "../../utilidades/mixin";
+
+@media screen and (min-width: 992px) {
+    header {
+        nav {
+            .logo-nav {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .servicios-main {
+        .servicios-fila {
+            // grid-template-rows: repeat(1, 1fr);
+
+            grid-template-rows: auto;
+
+            .servicios-contenedor-arriba {
+                @include flex-direccion;
+
+                .servicios-contenedor {
+                    .servicios-item {
+
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(1, 1fr);
+
+                        .servicios-estilos-texto {
+                            justify-content: center;
+                            padding: 0 1rem;
+
+                            p {}
+                        }
+
+                        img {}
+                    }
+                }
+            }
+
+            .servicios-contenedor-abajo {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+
+                .servicios-item-abajo {
+                    img {}
+
+                    .servicios-estilos-texto {}
+                }
+            }
+        }
+    }
+
+    .nosotros-main {
+        .nosotros-section {
+            .nosotros-item {
+
+                .nosotros-imagenes {
+                    flex-direction: row;
+                    height: 200px;
+                    justify-content: space-between;
+
+                    img {}
+                }
+            }
+        }
+
+        .objetivo-contenedor {
+            .objetivo-contenedor-item {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+
+                img {}
+
+                .objetivo-texto-derecha {}
+            }
+        }
+    }
+}

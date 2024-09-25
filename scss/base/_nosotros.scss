@@ -5,29 +5,54 @@
     gap: 2rem;
 
     .nosotros-section {
+
         .nosotros-item {
             @include flex-direccion;
             gap: 1rem;
+            padding: 2rem 1rem;
 
             h2 {
                 @include nosotros-h2;
             }
 
-            p {}
+            p {
+                text-align: center;
+            }
+
+            .nosotros-imagenes {
+                @include flex-direccion;
+                gap: 2rem;
+                height: 50%;
+
+                img {
+                    @include ancho-alto-cover;
+                }
+            }
         }
     }
 
     .objetivo-contenedor {
         .objetivo-contenedor-item {
-            img {}
+            padding: 2rem 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column-reverse;
+
+            img {
+                @include ancho-alto-cover;
+            }
 
             .objetivo-texto-derecha {
+                @include flex-direccion;
+                gap: 1rem;
                 h2 {
                     @include nosotros-h2;
 
                 }
 
-                p {}
+                p {
+                    text-align: center;
+                }
             }
         }
     }

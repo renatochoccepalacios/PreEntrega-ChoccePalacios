@@ -13,6 +13,7 @@ header nav {
   background-color: #a18167;
 }
 header nav .logo-nav {
+  display: none;
   position: absolute;
   margin: 0;
   height: 90%;
@@ -54,24 +55,52 @@ header nav .contenedor-nav div div ul li a:hover {
   background: #a18167;
 }
 
+.footer-principal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #a18167;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  margin-top: 117px;
+}
+.footer-principal .footer-lista {
+  margin-bottom: 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  flex-wrap: wrap;
+  color: #e9d3c0;
+}
+.footer-principal .footer-lista a {
+  color: #e9d3c0;
+}
+.footer-principal .footer-texto p {
+  margin-bottom: 0;
+}
+
 @keyframes banner {
-  0%, 25% {
+  0%, 20% {
     background-image: url("../../img/prueba1.jpg");
   }
-  45%, 50% {
+  25%, 45% {
     background-image: url("../../img/prueba2.jpg");
   }
-  60%, 75% {
+  50%, 70% {
     background-image: url("../../img/prueba3.jpg");
   }
-  80%, 100% {
+  75%, 100% {
     background-image: url("../../img/prueba4.jpg");
+    transform: scale(1.2);
   }
 }
 .main-inicio {
   height: 100vh;
   position: relative;
   z-index: -1;
+  overflow: hidden;
 }
 .main-inicio .back-negro {
   height: 100%;
@@ -84,7 +113,7 @@ header nav .contenedor-nav div div ul li a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  animation: banner 9s infinite linear alternate;
+  animation: banner 10s infinite linear alternate;
   position: absolute;
 }
 .main-inicio .main-inicio-text {
@@ -128,7 +157,7 @@ header nav .contenedor-nav div div ul li a:hover {
 }
 
 .servicios-main h1 {
-  padding: 40px;
+  padding: 30px;
   text-transform: uppercase;
   text-align: center;
   background-color: #e8e8e8;
@@ -165,8 +194,8 @@ header nav .contenedor-nav div div ul li a:hover {
   text-align: center;
 }
 .servicios-main .servicios-fila .servicios-contenedor-arriba .servicios-contenedor .servicios-item img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .servicios-main .servicios-fila .servicios-contenedor-abajo {
@@ -208,6 +237,7 @@ header nav .contenedor-nav div div ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem 1rem;
 }
 .nosotros-main .nosotros-section .nosotros-item h2 {
   margin: 0;
@@ -217,6 +247,36 @@ header nav .contenedor-nav div div ul li a:hover {
   padding: 15px 0;
   border-bottom: solid;
 }
+.nosotros-main .nosotros-section .nosotros-item p {
+  text-align: center;
+}
+.nosotros-main .nosotros-section .nosotros-item .nosotros-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 50%;
+}
+.nosotros-main .nosotros-section .nosotros-item .nosotros-imagenes img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.nosotros-main .objetivo-contenedor .objetivo-contenedor-item {
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column-reverse;
+}
+.nosotros-main .objetivo-contenedor .objetivo-contenedor-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.nosotros-main .objetivo-contenedor .objetivo-contenedor-item .objetivo-texto-derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .nosotros-main .objetivo-contenedor .objetivo-contenedor-item .objetivo-texto-derecha h2 {
   margin: 0;
   text-transform: uppercase;
@@ -225,30 +285,146 @@ header nav .contenedor-nav div div ul li a:hover {
   padding: 15px 0;
   border-bottom: solid;
 }
-.footer-principal {
+.nosotros-main .objetivo-contenedor .objetivo-contenedor-item .objetivo-texto-derecha p {
+  text-align: center;
+}
+
+.proyectos-main {
   display: flex;
   flex-direction: column;
+  gap: 5rem;
+  padding: 3rem 1rem;
+}
+.proyectos-main h1 {
+  text-transform: uppercase;
   text-align: center;
-  background-color: #a18167;
-  padding: 1rem 2rem;
+}
+.proyectos-main .proyectos-buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+}
+.proyectos-main .proyectos-buttons .active-proyecto-buttons {
+  color: #fff;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #000;
+  background-color: #000;
+}
+.proyectos-main .proyectos-buttons .button-no-seleccionado {
+  color: #000;
+  padding: 14px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #000;
+  transition: 0.5s ease;
+}
+.proyectos-main .proyectos-buttons .button-no-seleccionado:hover {
+  background-color: #000;
+  color: #fff;
+}
+.proyectos-main .galeria-proyectos {
+  display: grid;
   gap: 1rem;
-  margin-top: 117px;
 }
-.footer-principal .footer-lista {
-  margin-bottom: 0;
-  font-size: 2rem;
+.proyectos-main .galeria-proyectos img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contacto-main {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  padding: 0;
-  flex-wrap: wrap;
-  color: #e9d3c0;
+  flex-direction: column;
+  gap: 4rem;
 }
-.footer-principal .footer-lista a {
-  color: #e9d3c0;
+.contacto-main .contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.59);
+  padding: 2rem 1.3rem;
+  margin: 4rem 1rem;
+  gap: 1rem;
+  border-radius: 50px;
 }
-.footer-principal .footer-texto p {
-  margin-bottom: 0;
+.contacto-main .contacto-formulario h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.contacto-main .contacto-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contacto-main .contacto-formulario form .form-input-contacto, .contacto-main .contacto-formulario form textarea {
+  padding: 0.3rem 0.4rem;
+  border: 1px solid #a3a3a3;
+}
+.contacto-main .contacto-formulario form textarea {
+  resize: none;
+  height: 150px;
+}
+.contacto-main .contacto-formulario form button {
+  padding: 7px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.contacto-main .contacto-ubicacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.contacto-main .contacto-ubicacion h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.contacto-main .contacto-ubicacion iframe {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  header nav .logo-nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .servicios-main .servicios-fila {
+    grid-template-rows: auto;
+  }
+  .servicios-main .servicios-fila .servicios-contenedor-arriba {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios-main .servicios-fila .servicios-contenedor-arriba .servicios-contenedor .servicios-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .servicios-main .servicios-fila .servicios-contenedor-arriba .servicios-contenedor .servicios-item .servicios-estilos-texto {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .servicios-main .servicios-fila .servicios-contenedor-abajo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+  .nosotros-main .nosotros-section .nosotros-item .nosotros-imagenes {
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-between;
+  }
+  .nosotros-main .objetivo-contenedor .objetivo-contenedor-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+@import "../utilidades/variables";
+
 @mixin flex-direccion {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,12 @@
 @mixin text-estilos {
     text-transform: uppercase;
     text-align: center;
+}
+
+@mixin ancho-alto-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 @mixin ancho-alto ($width, $height) {
@@ -42,4 +50,12 @@
     text-wrap: balance;
     padding: 15px 0;
     border-bottom: solid;
+}
+
+@mixin buttons-style ($color){
+    color: $color;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $color-black;
 }
