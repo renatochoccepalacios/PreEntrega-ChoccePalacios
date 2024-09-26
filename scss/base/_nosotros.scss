@@ -1,6 +1,7 @@
 @import "../utilidades/mixin";
 
 .nosotros-main {
+    overflow: hidden;
     @include flex-direccion;
     gap: 2rem;
 

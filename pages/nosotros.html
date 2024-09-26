@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,10 +64,10 @@
         </nav>
     </header>
     <main class="nosotros-main">
-        <section class="nosotros-section">
-            <div class="nosotros-item">
-                <h2>Nosotros</h2>
-                <p>Bienvenidos a nuestro estudio de arquitectura, donde la creatividad y la funcionalidad se encuentran
+        <section class="nosotros-section" >
+            <div class="nosotros-item" >
+                <h2 data-aos="zoom-in-down" data-aos-duration="1400">Nosotros</h2>
+                <p data-aos="zoom-in-down" data-aos-duration="1400">Bienvenidos a nuestro estudio de arquitectura, donde la creatividad y la funcionalidad se encuentran
                     para dar vida a espacios excepcionales. Con una sólida trayectoria en el diseño arquitectónico, la
                     rehabilitación, la planificación urbana y la gestión de proyectos, nuestro equipo multidisciplinario
                     está comprometido con la excelencia en cada uno de nuestros trabajos.
@@ -83,16 +84,16 @@
 
                     En nuestro estudio, cada diseño es una historia, y estamos emocionados de ser parte de la tuya.</p>
                 <div class="nosotros-imagenes">
-                    <img src="../img/grupo-1.jpg" alt="Personas dando la mano">
-                    <img src="../img/grupo-2.jpg" alt="personas celebrando">
-                    <img src="../img/grupo-3.png" alt="grupo unido de trabajo">
+                    <img src="../img/grupo-1.jpg" alt="Personas dando la mano" data-aos="fade-right" data-aos-duration="1400">
+                    <img src="../img/grupo-2.jpg" alt="personas celebrando" data-aos="zoom-in-up" data-aos-duration="1400">
+                    <img src="../img/grupo-3.png" alt="grupo unido de trabajo" data-aos="fade-left" data-aos-duration="1400">
                 </div>
             </div>
         </section>
         <section class="objetivo-contenedor">
             <article class="objetivo-contenedor-item">
-                <img src="../img/casa.jpg" alt="foto de una casa con un amanecer">
-                <div class="objetivo-texto-derecha">
+                <img src="../img/casa.jpg" alt="foto de una casa con un amanecer" data-aos="fade-right" data-aos-duration="1400">
+                <div class="objetivo-texto-derecha" data-aos="fade-left" data-aos-duration="1400">
                     <h2>Nuestro Objetivo</h2>
                     <p>Nuestro objetivo es transformar visiones en realidades, creando espacios que inspiren y mejoren
                         la calidad de vida de sus usuarios. Nos comprometemos a diseñar y construir entornos que no solo
@@ -136,6 +137,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

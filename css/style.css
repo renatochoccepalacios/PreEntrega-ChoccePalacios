@@ -45,7 +45,7 @@ header nav .contenedor-nav div div ul li .active {
 }
 header nav .contenedor-nav div div ul li a {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.5s ease;
 }
 header nav .contenedor-nav div div ul li a:hover {
@@ -236,6 +236,7 @@ header nav .contenedor-nav div div ul li a:hover {
 }
 
 .nosotros-main {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 2rem;
