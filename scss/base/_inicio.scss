@@ -17,7 +17,7 @@
 
     .img-main {
         @include ancho-alto-cover;
-        animation: banner 10s infinite;
+        animation: banner 10s infinite linear alternate;
         // background-image: url(../img/banner1.jpg);
         background-size: cover;
         position: absolute;

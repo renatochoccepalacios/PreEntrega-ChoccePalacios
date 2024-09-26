@@ -114,7 +114,7 @@ header nav .contenedor-nav div div ul li a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  animation: banner 10s infinite;
+  animation: banner 10s infinite linear alternate;
   background-size: cover;
   position: absolute;
 }
@@ -356,6 +356,7 @@ header nav .contenedor-nav div div ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  overflow: hidden;
 }
 .contacto-main .contacto-formulario {
   display: flex;
