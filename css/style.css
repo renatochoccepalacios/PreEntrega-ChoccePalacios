@@ -176,6 +176,7 @@ header nav .contenedor-nav div div ul li a:hover {
   align-items: center;
 }
 .servicios-main .servicios-fila .servicios-contenedor-arriba .servicios-contenedor .servicios-item {
+  overflow: hidden;
   width: 100%;
 }
 .servicios-main .servicios-fila .servicios-contenedor-arriba .servicios-contenedor .servicios-item .servicios-estilos-texto {
