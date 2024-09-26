@@ -2,7 +2,7 @@
 
 .servicios-main {
     h1 {
-        padding: 30px;
+        padding: 40px;
         text-transform: uppercase;
         text-align: center;
         background-color: #e8e8e8;
@@ -49,6 +49,8 @@
             row-gap: 3rem;
 
             .servicios-item-abajo {
+                @include flex-direccion;
+                height: 100%;
                 img {
                     @include ancho-alto(100%, 100%);
                     object-fit: cover;

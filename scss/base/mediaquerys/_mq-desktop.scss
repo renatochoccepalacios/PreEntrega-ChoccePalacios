@@ -26,7 +26,7 @@
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(1, 1fr);
-
+                        
                         .servicios-estilos-texto {
                             justify-content: center;
                             padding: 0 1rem;
@@ -39,6 +39,12 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
                 gap: 2rem;
+
+                .servicios-item-abajo {
+                    img {
+                        height: 300px;
+                    }
+                }
             }
         }
     }
