@@ -4,7 +4,7 @@
 header {
     position: sticky;
     height: 70px;
-
+    z-index: 5;
     nav {
         height: 70px;
         background-color: $color-principal;

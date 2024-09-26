@@ -7,6 +7,7 @@
 header {
   position: sticky;
   height: 70px;
+  z-index: 5;
 }
 header nav {
   height: 70px;
@@ -328,10 +329,19 @@ header nav .contenedor-nav div div ul li a:hover {
   display: grid;
   gap: 1rem;
 }
-.proyectos-main .galeria-proyectos img {
+.proyectos-main .galeria-proyectos figure {
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+}
+.proyectos-main .galeria-proyectos figure img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+.proyectos-main .galeria-proyectos figure img:hover {
+  transform: scale(1.2);
 }
 
 .contacto-main {
@@ -378,6 +388,7 @@ header nav .contenedor-nav div div ul li a:hover {
   flex-direction: column;
   gap: 1rem;
   padding: 0 2rem;
+  justify-content: center;
 }
 .contacto-main .contacto-ubicacion h2 {
   text-transform: uppercase;
@@ -388,6 +399,17 @@ header nav .contenedor-nav div div ul li a:hover {
   width: 100%;
 }
 
+@media screen and (min-width: 600px) {
+  .proyectos-main .proyectos-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .proyectos-main .galeria-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacto-main .contacto-formulario {
+    margin: 3rem 2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   header nav .logo-nav {
     display: flex;
@@ -424,6 +446,17 @@ header nav .contenedor-nav div div ul li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+  .proyectos-main .proyectos-buttons {
+    place-content: center;
+    grid-template-columns: repeat(4, 240px);
+  }
+  .proyectos-main .galeria-proyectos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .contacto-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -1,6 +1,19 @@
 @media screen and (min-width: 600px) {
-    
-    
 
+    .proyectos-main {
+        .proyectos-buttons {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .galeria-proyectos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .contacto-main {
+        .contacto-formulario {
+            margin: 3rem 2rem;
+        }
+    }
 
 }

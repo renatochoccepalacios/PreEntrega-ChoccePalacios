@@ -36,8 +36,22 @@
         display: grid;
         gap: 1rem;
 
-        img {
-            @include ancho-alto-cover;
+        figure {
+            overflow: hidden;
+            cursor: pointer;
+            margin: 0;
+            img {
+                @include ancho-alto-cover;
+                transition: 0.5s ease;
+    
+    
+                &:hover {
+                    transform: scale(1.2);
+                    
+                }
+                
+            }
         }
+        
     }
 }

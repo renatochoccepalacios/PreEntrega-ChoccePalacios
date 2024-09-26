@@ -30,11 +30,7 @@
                         .servicios-estilos-texto {
                             justify-content: center;
                             padding: 0 1rem;
-
-                            p {}
                         }
-
-                        img {}
                     }
                 }
             }
@@ -43,12 +39,6 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: auto;
                 gap: 2rem;
-
-                .servicios-item-abajo {
-                    img {}
-
-                    .servicios-estilos-texto {}
-                }
             }
         }
     }
@@ -56,13 +46,10 @@
     .nosotros-main {
         .nosotros-section {
             .nosotros-item {
-
                 .nosotros-imagenes {
                     flex-direction: row;
                     height: 200px;
                     justify-content: space-between;
-
-                    img {}
                 }
             }
         }
@@ -72,11 +59,28 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: center;
-
-                img {}
-
-                .objetivo-texto-derecha {}
             }
+        }
+    }
+
+    .proyectos-main {
+        .proyectos-buttons {
+            place-content: center;
+            grid-template-columns: repeat(4, 240px);
+        }
+
+        .galeria-proyectos {
+            grid-template-columns: repeat(5, 1fr);
+
+        }
+    }
+
+    .contacto-main {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        .contacto-formulario {
+
         }
     }
 }

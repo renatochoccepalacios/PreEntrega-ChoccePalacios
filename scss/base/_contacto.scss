@@ -46,6 +46,7 @@
         @include flex-direccion;
         gap: 1rem;
         padding: 0 2rem;
+        justify-content: center;
         h2 {
             @include text-estilos;
             margin: 0;
