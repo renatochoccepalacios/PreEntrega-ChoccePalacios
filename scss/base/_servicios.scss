@@ -11,6 +11,7 @@
 
     .servicios-fila {
         @include grid;
+        overflow: hidden;
 
         .servicios-contenedor-arriba {
             display: grid;

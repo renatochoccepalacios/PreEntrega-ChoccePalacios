@@ -169,6 +169,7 @@ header nav .contenedor-nav div div ul li a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
 }
 .servicios-main .servicios-fila .servicios-contenedor-arriba {
   display: grid;
