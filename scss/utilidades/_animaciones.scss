@@ -2,22 +2,22 @@
 @keyframes banner {
     0%,
     20% {
-        background-image: url(../../img/1.png);
+        background-image: url(../img/banner1.jpg);
     }
 
     25%,
     45% {
-        background-image: url(../../img/Imagen4.png);
+        background-image: url(../img/banner2.png);
     }
 
     50%,
     70% {
-        background-image: url(../../img/Imagen20.png);
+        background-image: url(../img/banner3.png);
     }
 
     75%,
     100% {
-        background-image: url(../../img/img-barrio.jpg);
+        background-image: url(../img/banner4.png);
         transform: scale(1.2);
     }
 
