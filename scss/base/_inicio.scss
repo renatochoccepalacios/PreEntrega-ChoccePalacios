@@ -6,6 +6,7 @@
     position: relative;
     z-index: -1;
     overflow: hidden;
+
     .back-negro {
         height: 100%;
         position: absolute;
@@ -16,7 +17,9 @@
 
     .img-main {
         @include ancho-alto-cover;
-        animation: banner 10s infinite linear alternate;
+        // animation: banner 10s infinite;
+        background-image: url(imagen.png);
+        background-size: cover;
         position: absolute;
     }
 
@@ -29,6 +32,7 @@
         justify-content: center;
         align-items: center;
         z-index: 6;
+
         .inicio-texto {
             text-align: center;
 
@@ -47,6 +51,7 @@
             position: absolute;
             bottom: 50px;
             text-align: center;
+
             h3 {
                 @include inicio-texto(0.8rem, 200, 2px);
                 margin: 0 20px;
