@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,8 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-0">
                             <li class="nav-item">
-                                <a class="nav-link color-nav-link color-nav-a " aria-current="page" href="../index.html">Home</a>
+                                <a class="nav-link color-nav-link color-nav-a " aria-current="page"
+                                    href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link color-nav-link color-nav-a" href="servicios.html">Servicios</a>
@@ -62,7 +64,7 @@
     </header>
 
     <main class="contacto-main">
-        <section class="contacto-formulario">
+        <section class="contacto-formulario" data-aos="fade-right" data-aos-duration="1400">
             <h2>Contactame</h2>
             <form action="">
                 <input type="text" placeholder="Nombre" class="form-input-contacto">
@@ -72,7 +74,7 @@
                 <button>Enviar</button>
             </form>
         </section>
-        <section class="contacto-ubicacion">
+        <section class="contacto-ubicacion" data-aos="fade-left" data-aos-duration="1400">
             <h2>nuestras oficinas</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881908776!2d-58.384150689434605!3d-34.60373445738492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1723757250822!5m2!1ses-419!2sar"
@@ -103,6 +105,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -50,6 +50,7 @@
     }
 
     .nosotros-main {
+        overflow: hidden;
         .nosotros-section {
             .nosotros-item {
                 .nosotros-imagenes {
@@ -85,8 +86,5 @@
         display: grid;
 
         grid-template-columns: repeat(2, 1fr);
-        .contacto-formulario {
-
-        }
     }
 }

@@ -447,6 +447,9 @@ header nav .contenedor-nav div div ul li a:hover {
   .servicios-main .servicios-fila .servicios-contenedor-abajo .servicios-item-abajo img {
     height: 300px;
   }
+  .nosotros-main {
+    overflow: hidden;
+  }
   .nosotros-main .nosotros-section .nosotros-item .nosotros-imagenes {
     flex-direction: row;
     height: 200px;
