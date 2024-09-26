@@ -84,16 +84,16 @@ header nav .contenedor-nav div div ul li a:hover {
 
 @keyframes banner {
   0%, 20% {
-    background-image: url("../../img/prueba1.jpg");
+    background-image: url(../img/banner1.jpg);
   }
   25%, 45% {
-    background-image: url("../../img/prueba2.jpg");
+    background-image: url(../img/banner2.png);
   }
   50%, 70% {
-    background-image: url("../../img/prueba3.jpg");
+    background-image: url(../img/banner3.png);
   }
   75%, 100% {
-    background-image: url("../../img/prueba4.jpg");
+    background-image: url(../img/banner4.png);
     transform: scale(1.2);
   }
 }
@@ -114,7 +114,8 @@ header nav .contenedor-nav div div ul li a:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  animation: banner 10s infinite linear alternate;
+  animation: banner 10s infinite;
+  background-size: cover;
   position: absolute;
 }
 .main-inicio .main-inicio-text {
@@ -474,16 +475,16 @@ header nav .contenedor-nav div div ul li a:hover {
 }
 @keyframes banner {
   0%, 20% {
-    background-image: url("../../img/prueba1.jpg");
+    background-image: url(../img/banner1.jpg);
   }
   25%, 45% {
-    background-image: url("../../img/prueba2.jpg");
+    background-image: url(../img/banner2.png);
   }
   50%, 70% {
-    background-image: url("../../img/prueba3.jpg");
+    background-image: url(../img/banner3.png);
   }
   75%, 100% {
-    background-image: url("../../img/prueba4.jpg");
+    background-image: url(../img/banner4.png);
     transform: scale(1.2);
   }
 }
