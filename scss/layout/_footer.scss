@@ -1,5 +1,5 @@
-@import "../utilidades/mixin";
 @import "../utilidades/variables";
+@import "../utilidades/mixin";
 
 .footer-principal {
     @include flex-direccion;
@@ -7,7 +7,6 @@
     background-color: $color-principal;
     padding: 1rem 2rem;
     gap: 1rem;
-    margin-top: 117px;
 
     .footer-lista {
         margin-bottom: 0;
