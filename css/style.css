@@ -97,7 +97,7 @@ header nav .contenedor-nav div div ul li a:hover {
   }
 }
 .main-inicio {
-  height: 100vh;
+  height: calc(100vh - 70px);
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -119,7 +119,7 @@ header nav .contenedor-nav div div ul li a:hover {
 }
 .main-inicio .main-inicio-text {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 70px);
   color: #fff;
   display: flex;
   flex-direction: column;
